@@ -1,0 +1,41 @@
+/* Name: Narrthanan Seevananthan
+   Student Number: 100980168
+   
+   ECOR 1606, Assignment 2, Q2
+   
+   Purpose: loop from 0 to 360 degrees and output corresponding runway numbers */
+
+{
+
+    // Variables
+    double Angle = 0,
+           Runway_Number1 = 18,
+           Runway_Number2 = 36;
+
+    /* Only run if the angle is below 360
+       Angle increments by 17 */
+    while (Angle<360) {
+
+        // Puts the lower runway number in front
+        if ((Runway_Number1)<19) {
+            Runway_Number2 = (Runway_Number1) + 18;
+        } else {
+            Runway_Number1 = (Runway_Number1) - 18;
+            Runway_Number2 = (Runway_Number1) + 18;
+        } // end if
+
+        // adds a 0 before the first runway number if its below 10
+        if ((Runway_Number1>0) && (Runway_Number1<10)) {
+            cout << "A runway facing " << Angle << " degrees will have runway numbers 0" << Runway_Number1 << "/" << Runway_Number2;
+        } else {
+            cout << "A runway facing " << Angle << " degrees will have runway numbers " << Runway_Number1 << "/" << Runway_Number2;
+        } // end if
+        cout << endl;
+
+        Angle = (Angle) + 17;
+
+        // Rounds numbers to integer values
+        Runway_Number1 = int(((Angle)/10) + 0.5);
+    } // end while
+
+}

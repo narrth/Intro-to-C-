@@ -1,0 +1,20 @@
+Name: Narrthanan Seevananthan
+Student Number: 100980168
+
+
+ECOR 1606, Assignment 1, Q3
+
+//variables
+keep track of a numerical variable defined as 'number 1'
+
+ask user for wind direction and store numerical value in 'number 1'
+add 14 to the value in 'number 1' and re-store it in 'number 1'
+
+if 'number 1' is equal to a value between 30 and 210 then
+	{
+	display "Use runway 12 for landing"
+	}
+else
+	{
+	display "Use runway 30 for landing"
+	}

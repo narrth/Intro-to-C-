@@ -1,0 +1,38 @@
+Name: Narrthanan Seevananthan
+Student Number: 100980168
+
+
+ECOR 1606, Assignment 1, Q2
+
+//loop from 0 to 360 degrees and output corresponding runway numbers
+
+//variables
+Keep track of a numerical variable named 'counter 1' starting at zero
+Keep track of a numerical variable named 'counter 2' starting at 18
+keep track of a numerical variable named 'counter 3' starting at 36
+keep track of a numerical variable named 'number 1'
+
+while (counter 1 is less that 360 loop the following steps)
+{
+	
+	display("A runway facing " + (value of counter 1) + " degrees will have runway numbers " + ('counter 2') + "/" + ('counter 3')
+	
+	
+	divide counter 1 by ten and store this new number into 'number 1'
+	add 0.5 to 'number 1'
+	truncate the decimal places in the value 'number 1'
+
+	if 'number 1' is less than 19 than
+	{
+	let 'counter 2' equal 'number 1'
+	let 'counter 3' equal 'counter 2' added by 18
+	}
+	
+	else
+	{
+	let 'counter 2' equal 'number 1' subbtracted by 18
+	let 'counter 3' equal 'counter 2' added by 18
+	}
+
+	add 17 to counter 1
+}

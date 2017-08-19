@@ -1,0 +1,28 @@
+/* Name: Narrthanan Seevananthan
+   Student Number: 100980168
+   
+   
+   ECOR 1606, Assignment 2, Q3 */
+// Purpose: Ask the user for the wind directions and determine which way the aircraft should land
+
+{
+
+    // Variables
+    double wind_direction;
+
+    cout << "Please enter a wind direction:";
+    cin >> wind_direction;
+
+    if (((wind_direction) < 0) || ((wind_direction) > 360)) {
+        cout << "The wind direction entered is invalid";
+    } else {
+        wind_direction = (wind_direction) + 14;
+
+        if (30<(wind_direction) && (wind_direction)<210) {
+            cout << "Use runway 12 for landing.";
+        } else {
+            cout << "Use runway 30 for landing";
+        } // end if
+    } // end if
+
+}

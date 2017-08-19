@@ -1,0 +1,43 @@
+Name: Narrthanan Seevananthan
+Student Number: 100980168
+
+
+ECOR 1606, Assignment 1, Q1
+
+//Objective: Purchase most expensive beverage
+// a = available funds
+
+
+//find out available money
+
+ask user for amount of money available
+store value in variable 'a'
+
+if ('a' is less than 0.25) then
+	display ("you do not have enough money to purchase anything")
+	
+else if	('a' is less than 0.95) then
+	display ("Pop is the best option")
+
+else if 	('a' is less than 1.25) then
+	display ("Coffee is the best option")
+
+else if	('a' is less than 1.75) then
+	display Water is the best option")
+
+else if ('a' is less than 2.50) then
+	display ("Tea is the best option")
+
+else if ('a' is less than 3.50) then
+	display ("Strawberry Milkshake is the best option")
+
+else if ('a' is less than 4.99) then
+	display ("Asparagus Milkshake is the best option")
+
+else if ('a' is less than 8.99) then
+	display ("Orange Juice is the best option")
+
+else 
+	display ("Orange Juice with diced Carrots & Spinach is the best option")
+
+end if

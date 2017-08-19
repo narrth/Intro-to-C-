@@ -1,0 +1,38 @@
+/* Name: Narrthanan Seevananthan
+   Student number: 100980168
+   ECOR 1606, Assignment 2, Q1 */
+// Purpose: Purchase most expensive beverage with avaiable funds
+
+{
+
+    // Variables
+    double funds;
+
+    // Find out how much money the user has
+    cout << "Please enter the amount of money you wish to spend:";
+    cin >> funds;
+
+    // Check if the input is valid
+    if (funds<0) {
+        cout << "The amount entered is incorrect.";
+    } else if (funds<0.25) {
+        cout << "You do not have enough money to purchase anything.";
+    } else if (funds<0.95) {
+        cout << "Pop is the best option.";
+    } else if (funds<1.25) {
+        cout << "Coffee is the best option.";
+    } else if (funds<1.75) {
+        cout << "Water is the best option.";
+    } else if (funds<2.50) {
+        cout << "Tea is the best option.";
+    } else if (funds<3.50) {
+        cout << "Strawberry Milkshake is the best option.";
+    } else if (funds<4.99) {
+        cout << "Asparagus Milkshake is the best option.";
+    } else if (funds<8.99) {
+        cout << "Orange Juice is the best option.";
+    } else {
+        cout << "Orange Juice with diced Carrots & Spinach is the best option.";
+    } // end if
+
+}
